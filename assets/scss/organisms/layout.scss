@@ -1,0 +1,181 @@
+/*  ==========================================================================
+    Layout
+    ========================================================================== */
+
+    /*
+     * CSS for all devices
+     */
+
+    @media only screen {
+
+        @keyframes animatedBackground {
+            from { background-position: 0 0; opacity: 0; }
+            to { background-position: center top; opacity: 1; }
+        }
+
+        /*  Body
+            ========================================================================== */
+            body{                
+                -webkit-text-size-adjust: none;
+                -ms-text-size-adjust:none;
+                background-color: #000;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center top;
+                font-family: 'Montserrat', sans-serif;
+                animation: animatedBackground 5s ease;
+            }
+
+            .row{
+                max-width: 1240px;
+                padding: 0 20px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .title{
+                color: #e2c19e;
+                font-size: 70px;
+                line-height: 70px;
+                letter-spacing: -2px;
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .subtitle{
+                color: #fff;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 34px;
+                font-style: italic;
+                margin: 0 0 20px;
+            }
+
+            .desc{
+                color: #fff;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                margin: 0;
+            }
+
+            .input{
+                display: inline-block;
+                border: 1px solid rgba(34,34,34,.7);
+                background-color: #222;
+                background-color: rgba(34,34,34,.7);
+                padding: 10px 20px;
+                width: 80px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 26px;
+                margin: 0 10px 10px 0;
+            }
+
+            .text{
+                color: #fff;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+
+            .ipsum{
+                display: block;
+                border: 1px solid rgba(34,34,34,.7);
+                background-color: #222;
+                background-color: rgba(34,34,34,.7);
+                resize: vertical;
+                color: #fff;
+                font-size: 18px;
+                line-height: 28px;
+                padding: 20px;
+                height: 260px;
+            }
+
+            .about{
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                color: #fff;
+                font-size: 12px;
+                line-height: 12px;
+                text-decoration: none;
+                font-weight: 700;
+                border-radius: 50%;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: #222;
+                background-color: rgba(34,34,34,.4);
+                text-align: center;
+                padding: 4px;
+            }
+
+    }
+
+    /*
+     * CSS for Extra small devices (phones, less than 768px)
+     */
+
+    @media (max-width: $breakpoint) {
+        
+        /*  Body
+            ========================================================================== */
+            body{
+                background-image: url(../img/pablito-small.jpg);
+                background-size: cover;
+            }
+
+            .hold{
+                margin: 12% 0 100px 0;
+            }
+
+            .ipsum{
+                width: 100%;
+            }
+    }
+
+    /*
+     * CSS for Small devices (tablets, 768px and up)
+     */
+
+    @media (min-width: $breakpoint) {
+
+        /*  Body
+            ========================================================================== */
+            body{
+                background-image: url(../img/pablito-medium.jpg);
+            }
+
+            .hold{
+                margin: 12% 0 100px 0;
+            }
+
+            .ipsum{
+                width: 60%;
+            }
+
+    }
+
+    /*
+     * CSS for Medium devices (desktops, 992px and up)
+     */
+
+    @media (min-width: $breakpoint-medium) {
+        
+        /*  Body
+            ========================================================================== */
+            body{
+                background-image: url(../img/pablito.jpg);
+            }
+        
+    }
+
+    /*
+     * CSS for Large devices (large desktops, 1200px and up)
+     */
+
+    @media (min-width: $breakpoint-large) {
+
+    }
