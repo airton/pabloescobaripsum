@@ -26,6 +26,10 @@
                 animation: animatedBackground 5s ease;
             }
 
+            [role="main"]{
+                padding-bottom: 20px;
+            }
+
             .row{
                 max-width: 1240px;
                 padding: 0 20px;
@@ -60,13 +64,13 @@
                 margin: 0;
             }
 
-            .input{
+            .number{
                 display: inline-block;
                 border: 1px solid rgba(34,34,34,.7);
                 background-color: #222;
                 background-color: rgba(34,34,34,.7);
-                padding: 10px 20px;
-                width: 80px;
+                padding: 10px 10px 10px 15px;
+                width: 70px;
                 color: #fff;
                 font-size: 16px;
                 line-height: 26px;
