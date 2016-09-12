@@ -15,7 +15,7 @@
 
         /*  Body
             ========================================================================== */
-            body{                
+            body{
                 -webkit-text-size-adjust: none;
                 -ms-text-size-adjust:none;
                 background-color: #000;
@@ -116,6 +116,10 @@
                 padding: 4px;
             }
 
+            .adsbygoogle{
+                margin-top: 10px;
+            }
+
     }
 
     /*
@@ -123,7 +127,7 @@
      */
 
     @media (max-width: $breakpoint) {
-        
+
         /*  Body
             ========================================================================== */
             body{
@@ -167,13 +171,13 @@
      */
 
     @media (min-width: $breakpoint-medium) {
-        
+
         /*  Body
             ========================================================================== */
             body{
                 background-image: url(../img/pablito.jpg);
             }
-        
+
     }
 
     /*
