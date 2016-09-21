@@ -16,6 +16,7 @@
             var self = this;
             self.externalLinks();
             self.changeIpsum();
+            self.copyClipboard();
         },
 
         // External links
@@ -25,7 +26,7 @@
             });
         },
 
-        // New function ...
+        // Change Ipsum
         changeIpsum: function(){
 
             var quotes = [
@@ -38,7 +39,7 @@
             ];
 
             app.number.addEventListener('change', function(e) {
-                console.log(e);
+                //console.log(e);
 
                 var text = "";
 
@@ -52,7 +53,26 @@
                 }
 
             });
+        },
+
+        // Copyt Clipboard
+        copyClipboard: function(){
+            var clipboard = new Clipboard('.btn-copy');/*
+
+            clipboard.on('success', function(e) {
+                console.info('Action:', e.action);
+                console.info('Text:', e.text);
+                console.info('Trigger:', e.trigger);
+
+                e.clearSelection();
+            });
+
+            clipboard.on('error', function(e) {
+                console.error('Action:', e.action);
+                console.error('Trigger:', e.trigger);
+            });*/
         }
+
     };
 
     initialConfig.init();

@@ -144,7 +144,7 @@ var gulp 		= require('gulp'),
 
 			// scripts.min.js
 			gulp.src([
-    				dirs._build+'/js/libs/jquery.min.js', // jQuery Lib
+    				dirs._assets+'/js/clipboard.min.js', // clipboard
     				dirs._assets+'/js/scripts.js'
 				])
     		    .pipe(plugins.concat('scripts.js'))
